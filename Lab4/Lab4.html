@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Лаб 4</title>
+        <script type="text/javascript" src="../Lab4/jquery.js"></script>
+        <script type="text/javascript" src="../Lab4/jquery.cross-slide.js"></script>
+        <script type="text/javascript">
+            $(function() {
+                $('#test1').crossSlide({
+                    sleep: 2,
+                    fade: 1
+                }, [
+                    {src: 'img1.jpg'},
+                    {src: 'img2.jpg'},
+                    {src: 'img3.jpg'},
+                    {src: 'img4.jpg'}
+                ]);
+            });
+        </script>
+        <style>
+            body{
+                text-align: right;
+            }
+            h2, h3{
+                color: red;
+                text-transform: uppercase;
+                font-family: sans-serif;
+                letter-spacing: -.1em;
+            }
+            em{
+                color: green;
+            }
+        </style>
+        <style type="text/css">
+            #test1 {
+                margin: 1em auto;
+                border: 2px solid #6699CC;
+                width: 380px;
+                height: 360px;
+            }
+        </style>
+    </head>
+    <body>
+        <h2>Приватные и публичные программы</h2>
+        <hr>
+        <h3>Приватные программы</h3>
+        <p>
+                <em>Приватные программы</em> я называю те, которые будут
+                использоваться только вами (их разработчиками) или очень
+                ограниченным кругом людей, чьи навыки, требования и компьютеры
+                хорошо известны.</p>
+        <h3>Публичные программы</h3>
+        <p>
+            <em>Публичные программы</em>&nbsp;&#151; прямая противоположность
+            приватным. Они распространяются среди большего числа людей.</p>
+        <p><strong>Лу Гринзоу</strong></p>
+        <div align="center" id="test1">Пример картинок</div>
+    </body>
+</html>

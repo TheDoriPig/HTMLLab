@@ -1,0 +1,20 @@
+body {
+    margin-left: 23%;
+    margin-right: 23%;
+    background-image: url("../Lab2/fon.jpg");
+    background-attachment: fixed;
+    background-size: cover;
+}
+h1 {
+    color: blue;
+    text-align: center;
+}
+.highlight-red {
+    color: red;
+    font-size: 1.2em;
+}
+@media (max-width: 768px) {
+    body {
+        background-size: contain;
+    }
+}
