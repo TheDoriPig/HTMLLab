@@ -1,0 +1,61 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+.container {
+    border: 2px solid black;
+    
+}
+body {
+    height: 100vh;
+    display: grid;
+    grid-template-areas:
+        "logo head head"
+        "nav nav nav"
+        "con con con";
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto auto auto auto;
+    overflow: hidden;
+    background-image: url("backg.jpg");
+    background-attachment: fixed;
+    background-size: cover;
+}
+.logo {
+    grid-area: logo;
+}
+.header {
+    grid-area: head;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.nav {
+    grid-area: nav;
+    display: grid;
+    grid-auto-flow: column;
+    align-items: center;
+    justify-content: space-around;
+    padding: 1em;
+}
+.nav a {
+    font-weight: bold;
+    width: 130px;
+    height: 40px;
+    color: black;
+    background: white;
+    border: 1px solid red;
+    border-radius: 10px;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+}
+.content {
+    margin-left: 15%;
+    margin-right: 15%;
+    grid-area: con;
+    overflow-y: auto;
+    text-align: center;
+}
