@@ -1,0 +1,38 @@
+ul.olist {
+    list-style: none;
+    padding-left: 20px;
+}
+ul.olist > li::before {
+    content: "– ";
+    position: absolute;
+    margin-left: -15px;
+}
+ul.olist > li {
+    position: relative;
+    margin-bottom: 20px;
+    font-weight: bold; 
+}
+ol.inumeric {
+    list-style-type: decimal;
+    padding-left: 25px;
+    margin-top: 5px;
+    font-weight: normal;
+}
+ol.ialpha {
+    list-style-type: lower-alpha;
+    padding-left: 25px;
+    font-weight: normal;
+}
+dl.dlist {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding-left: 15px;
+}
+dl.dlist dt {
+    font-weight: bold;
+    margin-top: 8px;
+}
+dl.dlist dd {
+    margin-left: 15px;
+    margin-bottom: 5px;
+}

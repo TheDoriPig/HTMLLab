@@ -39,23 +39,49 @@ body {
     justify-content: space-around;
     padding: 1em;
 }
-.nav a {
+.content {
+    margin-left: 15%;
+    margin-right: 15%;
+    padding-left: 35px;
+    grid-area: con;
+    overflow-y: auto;
+}
+.limg {
+    list-style-image: url(rab.png);
+    padding: 15px 50px;
+}
+ul.olist {
+    list-style: lower-latin;
+    padding-left: 40px;
+
+}
+dt {
     font-weight: bold;
-    width: 130px;
-    height: 40px;
+    font-size: 1.1em;
+    padding-left: 25px;
+}
+dd {
+    padding-left: 45px;
+    margin-bottom: 10px;
+}
+ul.hr {
+    margin: 0;
+    padding: 4px;
+}
+ul.hr li {
+    display: inline;
+    margin-right: 5px;
+}
+ul.hr li a {
+    font-weight: bold;
     color: black;
     background: white;
     border: 1px solid red;
     border-radius: 10px;
-    display: grid;
-    align-items: center;
-    justify-content: center;
     text-decoration: none;
-}
-.content {
-    margin-left: 15%;
-    margin-right: 15%;
-    grid-area: con;
-    overflow-y: auto;
-    text-align: center;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin: 60px;
 }
