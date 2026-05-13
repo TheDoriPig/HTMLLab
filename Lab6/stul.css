@@ -36,3 +36,16 @@ dl.dlist dd {
     margin-left: 15px;
     margin-bottom: 5px;
 }
+table {
+    border-collapse: collapse;
+}
+th, td, tr {
+    border: 1px solid black;
+    text-align: center;
+}
+table tr:nth-child(odd) {
+    background-color: antiquewhite;
+}
+table tr:nth-child(2n) {
+    background-color: bisque;
+}
