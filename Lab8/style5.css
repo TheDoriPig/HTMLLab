@@ -1,0 +1,109 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+.container {
+    border: 2px solid black;
+    
+}
+body {
+    height: 100vh;
+    display: grid;
+    grid-template-areas:
+        "logo head head"
+        "nav nav nav"
+        "con con con";
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto auto auto auto;
+    overflow: hidden;
+    background-image: url("img7/backg.jpg");
+    background-attachment: fixed;
+    background-size: cover;
+}
+.logo {
+    grid-area: logo;
+}
+.header {
+    grid-area: head;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.nav {
+    grid-area: nav;
+    display: grid;
+    grid-auto-flow: column;
+    align-items: center;
+    justify-content: space-around;
+    padding: 1em;
+}
+.content {
+    margin-left: 15%;
+    margin-right: 15%;
+    padding-left: 35px;
+    grid-area: con;
+    overflow-y: auto;
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    gap: 30px;
+    justify-content: center;
+    padding: 20px;
+}
+.limg {
+    list-style-image: url(rab.png);
+    padding: 15px 50px;
+}
+ul.olist {
+    list-style: lower-latin;
+    padding-left: 40px;
+
+}
+dt {
+    font-weight: bold;
+    font-size: 1.1em;
+    padding-left: 25px;
+}
+dd {
+    padding-left: 45px;
+    margin-bottom: 10px;
+}
+ul.hr {
+    margin: 0;
+    padding: 4px;
+}
+ul.hr li {
+    display: inline;
+    margin-right: 5px;
+}
+ul.hr li a {
+    font-weight: bold;
+    color: black;
+    background: white;
+    border: 1px solid red;
+    border-radius: 10px;
+    text-decoration: none;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin: 60px;
+}
+table {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    border-collapse: collapse;
+}
+th, td, tr {
+    border: 1px solid black;
+    text-align: center;
+    width: 100px;
+    height: 40px;
+}
+table tr:nth-child(odd) {
+    background-color: antiquewhite;
+}
+table tr:nth-child(2n) {
+    background-color: bisque;
+}

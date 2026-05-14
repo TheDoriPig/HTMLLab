@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Биржа труда</title>
+        <link rel="stylesheet" href="style5.css">
+    </head>
+    <body>
+        <div class="logo"><img src="img7/viz.png" width="487.33" height="200"></div>
+        <h1 class="header">Биржа труда Пашковский Андрей Геннадьевич</h1>
+        <div class="nav">
+            <ul class="hr">
+                <li><a href="">Курс</a></li>
+                <li><a href="">Информация</a></li>
+                <li><a href="">Визитка</a></li>
+            </ul>
+        </div>
+        <div class="content container">
+            <form action="">
+                <table border="1" cellpadding="5">
+                    <caption align="left">
+                        <b> Анкета биржи труда </b>
+                    </caption>
+                    <tr>
+                        <td>ФИО*</td>
+                        <td>
+                            <input type="name" required autofocus name="fio">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>E-mail*</td>
+                        <td>
+                            <input type="email" required name="email">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Пол*</td>
+                        <td>
+                            <input type="radio" required tabindex="-1" name="gender" id="g1" val- ue="1">
+                            <label for="g1">Мужчина</label>
+                            <input type="radio" required tabindex="-1" name="gender" id="g2" val- ue="2">
+                            <label for="g2">Женщина</label>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Год рождения*</td>
+                        <td>
+                            <input type="date" required tabindex="-1" size="1">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Знание языков</td>
+                        <td style="text-align: left; padding-left: 20px;">
+                            <input type="checkbox" tabindex="-1" name="languadg" val- ue="English" checked>Английский<br>
+                            <input type="checkbox" tabindex="-1" name="languadg" val- ue="Russian" checked>Русский<br>
+                            <input type="checkbox" tabindex="-1" name="languadg" val- ue="Doich">Немецкий<br>
+                            <input type="checkbox" tabindex="-1" name="languadg" val- ue="Spanish">Испанский<br>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Желаемая зарплата</td>
+                        <td>
+                            <input type="range" min="300" max="3500" step="50" name="salary" id="salary-input" value="1000" oninput="salaryOutput.value = this.value">
+                            <br>
+                            Выбрано: <output id="salaryOutput">1000</output> долларов США
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="2">
+                            <textarea name="description" cols="40" rows="10">Коротко о себе, опишите ваши навыки, опыт работы, образование...</textarea>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="2">Поля отмеченные * обязательны к заполнению</td>
+                    </tr>
+                    <tr>
+                        <td colspan="2">
+                            <input type="submit" value="Отправить">
+                            <button type="reset">Сбросить</button>
+                        </td>
+                    </tr>
+                </table>
+            </form>
+        </div>
+    </body>
+</html>
