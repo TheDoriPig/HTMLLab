@@ -16,7 +16,7 @@ body {
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: auto auto auto auto;
     overflow: hidden;
-    background-image: url("img/backg.jpg");
+    background-image: url("img7/backg.jpg");
     background-attachment: fixed;
     background-size: cover;
 }
@@ -45,9 +45,14 @@ body {
     padding-left: 35px;
     grid-area: con;
     overflow-y: auto;
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    gap: 30px;
+    justify-content: center;
+    padding: 20px;
 }
 .limg {
-    list-style-image: url(img/rab.png);
+    list-style-image: url(rab.png);
     padding: 15px 50px;
 }
 ul.olist {
@@ -84,4 +89,21 @@ ul.hr li a {
     padding-top: 10px;
     padding-bottom: 10px;
     margin: 60px;
+}
+table {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    border-collapse: collapse;
+}
+th, td, tr {
+    border: 1px solid black;
+    text-align: center;
+    width: 100px;
+    height: 60px;
+}
+table tr:nth-child(odd) {
+    background-color: antiquewhite;
+}
+table tr:nth-child(2n) {
+    background-color: bisque;
 }
